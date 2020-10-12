@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Arkanoid"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="Arkanoid" Height="800" Width="600">
+    <Canvas Name="GameCanvas" Focusable="True" KeyDown="GameCanvas_OnKeyDown" KeyUp="GameCanvas_OnKeyUp" Background="Black">
+        <Label Name="TxtScore" FontSize="20" FontWeight="ExtraBold" Content="Wynik: 0" Canvas.Right="10"/>
         
-    </Grid>
+        
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="-30" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="25" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="80" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="135" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="190" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="245" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="300" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="355" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="410" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="465" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="515" />
+        <Image Height="60" Source="Resources/Images/texture.png" Canvas.Bottom="0" Canvas.Left="565" />
+        
+        <Image Name="Ball" Height="45" Width="45" Source="Resources/Images/pixBall.png" Canvas.Top="190" Canvas.Left="100"></Image>
+        <Image Name="Platform" Height="45" Width="200" Source="Resources/Images/platform.png" Canvas.Top="650" Canvas.Left="200" />
+        
+    </Canvas>
 </Window>
